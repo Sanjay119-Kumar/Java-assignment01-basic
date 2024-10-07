@@ -31,5 +31,12 @@ public class Driver {
         System.out.println("Number store in variable with last digit 0 = " + result);
 
         Assignment03.p4();
+        Assignment03.p5();
+        Assignment03.p6();
+        Assignment03.p7();
+        Assignment03.p8();
+        Assignment03.p9();
+        Assignment03.p10();
+
     }
 }
