@@ -1,26 +1,32 @@
 
     class Assignment01 {
-        public static void p1(){
+        public static void p1() {
             System.out.println("Hello Student");
         }
-        public static void p2(){
+
+        public static void p2() {
             System.out.println("Hello\nStudent");
         }
-        public static void p3(){
+
+        public static void p3() {
             System.out.println("\"MySirG\"");
         }
-        public static void p4(){
+
+        public static void p4() {
             System.out.println("\"Happay Teacher's Day\"");
         }
-        public static void p5(){
+
+        public static void p5() {
             int x = 0;
             System.out.println("Value of x = " + x);
         }
-        public static void p6(){
+
+        public static void p6() {
             float x = 5f;
             System.out.println("Value of x = " + x);
         }
-        public static void p7(){
+
+        public static void p7() {
             int x = 0;
             System.out.println("Value of x = " + x);
         }
@@ -124,8 +130,28 @@ The JRE ensures that Java applications can be executed seamlessly across differe
 
  */
 
-        
+        public static int calculateFair(char gender, int age) {
+           if (gender=='M'){
+               if (age>50)
+                   return 10;
+               else
+                   return 20;
+           }
+           else{
+               if (age<30)
+                   return 50;
+               else
+                   return 40;
+           }
+
+        }
+        public static void main(String[] args) {
+            int ticketFair = Assignment01.calculateFair('M', 50);
+            System.out.println("Ticket fair is " + ticketFair);
+        }
     }
+
+
 
 
 
