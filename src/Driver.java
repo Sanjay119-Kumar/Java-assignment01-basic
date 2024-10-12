@@ -41,7 +41,7 @@ public class Driver {
        /* int fairTicket = Assignment01.calculateFair('F', 60);
         System.out.println("Ticket Fair is " + fairTicket);*/
 
-        System.out.println("*************************Assignment - 04 *****************************");
+        //System.out.println("*************************Assignment - 04 *****************************");
         // Q.1.
         /*boolean b = Assignment04.p1(50);
         if (b){
@@ -104,7 +104,75 @@ public class Driver {
         }*/
 
         //Q10
-        String res6 = Assignment04.p10(11);
-        System.out.println(res6);
+       /* String res6 = Assignment04.p10(11);
+        System.out.println(res6);*/
+
+        //System.out.println("*************************Assignment - 05 *****************************");
+
+        //Q.1.
+        /*Assignment05.p1();*/
+
+        //Q.2.
+        /*Assignment05.p2();*/
+
+        //Q.3.
+        /*Assignment05.p3();*/
+
+        //Q.4.
+        /*Assignment05.p4();*/
+
+        //Q.5.
+       /* Assignment05.p5();*/
+
+        //Q.6.
+        /*Assignment05.p6();*/
+
+        //Q.7.
+       /* Assignment05.p7();*/
+
+        //Q.8.
+        /*Assignment05.p8();*/
+
+        //Q.9
+        /*Assignment05.p9();*/
+
+        //Q.10
+        /*Assignment05.p10();*/
+
+
+        System.out.println("*************************Assignment - 06 *****************************");
+
+        //Q.1
+        /*Assignment06.p1();*/
+
+
+        //Q.2.
+        /*Assignment06.p2();*/
+
+
+        //Q.3.
+        /*Assignment06.p3();*/
+
+        //Q.4.
+        /*Assignment06.p4();*/
+
+        //Q.5.
+        /*Assignment06.p5();*/
+
+        //Q.6.
+        /*Assignment06.p6();*/
+
+        //Q.7.
+        /*Assignment06.p7();*/
+
+        //Q.8.
+        /*Assignment06.p8();*/
+
+        //Q.9.
+        /*Assignment06.p9();*/
+
+        //Q.10
+        Assignment06.p10();
+
     }
 }
