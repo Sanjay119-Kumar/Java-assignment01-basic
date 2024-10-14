@@ -140,7 +140,7 @@ public class Driver {
         /*Assignment05.p10();*/
 
 
-        System.out.println("*************************Assignment - 06 *****************************");
+        //System.out.println("*************************Assignment - 06 *****************************");
 
         //Q.1
         /*Assignment06.p1();*/
@@ -172,7 +172,141 @@ public class Driver {
         /*Assignment06.p9();*/
 
         //Q.10
-        Assignment06.p10();
+        /*Assignment06.p10();*/
+
+       // System.out.println("*************************Assignment - 07 *****************************");
+
+        /*    Q.1
+
+        //Object Creation
+        Assignment07.ComplexNumber complex = new Assignment07.ComplexNumber();
+        //set values using complex method
+        complex.setComplexNumbers(10,2);
+        //call function to print
+        complex.printComplexNumber();
+
+        */
+
+        /* Q.2.
+
+        Assignment07.Time time = new Assignment07.Time();
+        time.setTimeValue(3,56,50);
+        time.displayTime();
+
+        */
+
+/*
+
+         Q.3.
+
+        Assignment07.Cuboid cuboidObject = new Assignment07.Cuboid();
+        cuboidObject.setCuboidLength(5);
+        cuboidObject.setCuboidWidth(3);
+        cuboidObject.setCuboidHeight(6);
+        cuboidObject.printVolume();
+
+        cuboidObject.setCuboidLength(2);
+        cuboidObject.setCuboidWidth(1);
+        cuboidObject.setCuboidHeight(3);
+        cuboidObject.printSurfaceArea();
+
+*/
+
+/*      Q.04
+
+        Assignment07.Employee employeeObject = new Assignment07.Employee();
+        employeeObject.setEmpId(001);
+        employeeObject.setName("Kalua");
+        employeeObject.setSalary(150000.500f);
+
+        System.out.println("Employee Details is " + "empId = " + employeeObject.getEmpId() + " employee name " + employeeObject.getName() + " employee salary " + employeeObject.getSalary());
+
+
+*/
+
+/*    Q.5.
+
+        Assignment07.Contact contactObject =new Assignment07.Contact();
+        contactObject.setId(101);
+        contactObject.setFirstName("Sanjay");
+        contactObject.setLastName("Kumar");
+        contactObject.setMobileNo(1234567891);
+        contactObject.setEmailId("sanjay1234@gmail.com");
+
+        System.out.println("Contact Details are " + " id = " + contactObject.getId() + " name " +
+                contactObject.getFirstName() + " " + contactObject.getLastName() +
+                " Mobile No. = " + contactObject.getMobileNo() +
+                " Email Id = " + contactObject.getEmailId());
+
+*/
+
+
+/*        Q.6.
+
+        Assignment07.Question questionObject = new Assignment07.Question();
+        questionObject.setQuestions(1,"Is he CODER \n" , "Yes \n", "No \n" , "Correct A, B Both \n", "None of these");
+        questionObject.displayQuestion();
+
+*/
+
+
+/*   Q.8.
+
+
+        Assignment07.Course courseObject =new Assignment07.Course();
+        courseObject.setCourseId(12345);
+        courseObject.setCourseName("JAVA SE & DSA");
+        courseObject.setDuration("2 years");
+        courseObject.setCourseFee(4000.00f);
+
+        System.out.println("\n************************COURSE DETAILS**********************************");
+        System.out.println( " ID = " + courseObject.getCourseId() +
+                " \n Course Name = " + courseObject.getCourseName() +
+                " \n Duration = " +courseObject.getDuration() +
+                " \n Fee = " + courseObject.getCourseFee());
+
+*/
+
+ /*        Q.9
+
+        Assignment07.Distance distanceObject1 = new Assignment07.Distance();
+        Assignment07.Distance distanceObject2 = new Assignment07.Distance();
+
+        distanceObject1.setDistance(1 ,500,25);
+        distanceObject2.setDistance(2,300,15);
+
+        Assignment07.Distance totalDistance = distanceObject1.addDistance(distanceObject2);
+        totalDistance.displayDistance();
+
+*/
+
+
+/* Q.10
+
+        Assignment07.Book book = new Assignment07.Book();
+        book.setBookId(101);
+        book.setBookPrice(150.99f);
+        book.setBookAuthor("Saurabh Sir");
+
+        System.out.println(" *******************************Book Details****************************  ");
+        System.out.println("Book id = " + book.getBookId() + "\n" +
+                           "Book Price = " + book.getBookPrice() + "\n" +
+                           "Book Author = " + book.getBookAuthor()
+                );
+
+*/
+
+        System.out.println("*************************Assignment - 08 *****************************");
+
+
+
+
+
+
+
+
+
 
     }
+
 }
