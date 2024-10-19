@@ -296,16 +296,152 @@ public class Driver {
 
 */
 
-        System.out.println("*************************Assignment - 08 *****************************");
+       // System.out.println("*************************Assignment - 08 *****************************");
+
+/*   Q.1.
+
+        Assignment08.Account accountObj = new Assignment08.Account();
+        accountObj.setAccountNumber(123456789);
+        accountObj.setCustomerName("Sanjay Kumar");
+        accountObj.setBalance(10000.200f);
+        accountObj.setRateOfInterest(2.0f);
+        System.out.println("SI = " + accountObj.calculateSimpleInterest(6f));
+
+
+        System.out.println("Account number = " + accountObj.getAccountNumber() + "\n"
+                + "Customer Name = " + accountObj.getCustomerName() + "\n"
+                + "Customer balance = " + accountObj.getBalance() + "\n"
+                + "Rate of interest = " + accountObj.getRateOfInterest()
+
+                );
+
+*/
+
+/*
+        Q.2
+
+        Assignment08.SuperCar superCar1 = Assignment08.SuperCar.getInstance();
+        superCar1.setOwnerName("Sanjay Kumar");
+        superCar1.setPrice(15000.111f);
+        superCar1.setColor("Black");
+        superCar1.setBrand("BMW");
+        superCar1.showCarDetails();
+
+        System.out.println("***************************************************************");
 
 
 
+        Assignment08.SuperCar superCar2 = Assignment08.SuperCar.getInstance();
+        superCar2.setOwnerName("Bernard Arnault");
+        superCar2.setPrice(10000.0f);
+        superCar2.setColor("Purple");
+        superCar2.setBrand("Bugatti");
+        superCar2.showCarDetails();
+
+        System.out.println(superCar1==superCar2);
 
 
+*/
+
+/*      Q.3
 
 
+        Assignment08.Video videoObj = new Assignment08.Video();
+        videoObj.setVideoId(01);
+        videoObj.setVideoTittle("Glory");
+        videoObj.setVideoViews(100000000);
+        videoObj.setVideoLikes(100000);
+        videoObj.getSingerName("Honey Singh");
+        videoObj.displayVideoDetails();
+        Assignment08.Video.setTotalVideo(1);
+        Assignment08.Video.displayTotalVideo();
+
+        System.out.println("Details Of Glory Album " + "\n" +
+                videoObj.getVideoTittle() + "\n" +
+                videoObj.getVideoTittle() + "\n" +
+                videoObj.getVideoViews() + "\n" +
+                videoObj.getVideoLikes() + "\n" +
+                videoObj.getSingerName()
+
+                );
 
 
+*/
+
+/*
+       // Q.04
+
+        Assignment08.Batch batch1 = new Assignment08.Batch();
+        batch1.setBatchCode(101);
+        batch1.setCourseName("JAVA SE & DSA");
+        batch1.setCourseStartDate("10 Nov 2024");
+        //batch1.countStudentAuto();
+        batch1.setClassTiming("7:30 pm");
+        batch1.setClassesDays("Mod , Wed , Fri");
+
+
+        //I want to add 10 student and it count automatically
+        for (int countStudent = 1; countStudent<=10; countStudent++){
+            batch1.addStudentAuto();
+            System.out.println("Student " + countStudent + " added in the JAVA Batch ");
+        }
+        batch1.showCourseDetails();
+        Assignment08.Batch.setTotalNumberOfBatches(1);
+        Assignment08.Batch.showAllBatches();
+*/
+
+/*
+        //Q.5
+        Assignment08.Box box1 = new Assignment08.Box();
+        box1.setDimensions(2.0f, 1.0f , 4.0f );
+        box1.showDimensions();
+        for (int i =1; i<=5; i++){
+            box1.displayBoxCount();
+            System.out.println("Box " + i + " added in box1");
+        }
+        Assignment08.Box.PrintBox();
+
+
+        Assignment08.Box box2 = new Assignment08.Box();
+        box1.setDimensions(2.0f, 1.0f , 4.0f );
+        box1.showDimensions();
+        for (int i =1; i<=5; i++){
+            box1.displayBoxCount();
+            System.out.println("Box " + i + " added in box2");
+        }
+
+        Assignment08.Box.PrintBox();
+
+
+*/
+
+        System.out.println("*************************Assignment - 09 - Wrapper Classes  *****************************");
+
+/*  Q.1
+
+        Assignment09.Circle circle1 = new Assignment09.Circle();
+        circle1.setRadius(5.0f);
+        circle1.showArea();
+        circle1.showCircumference();
+
+
+*/
+        //Q.2.
+        Assignment09.MarkSheet markSheet1 = new Assignment09.MarkSheet(); // instantiation
+        markSheet1.setPhysicsMarks(34.01f); // setting Values in private area through setter methods
+        markSheet1.setMathematicsMarks(90.02f);
+        markSheet1.setChemistryMarks(72.05f);
+        markSheet1.setEnglishMarks(95.01f);
+        markSheet1.setHindiMarks(99.01f);
+        markSheet1.showAllSubjectMarks();
+
+        //Q.3.
+        System.out.println("Max Marks = " + markSheet1.findMaxMark());
+
+        //Q.4
+        System.out.println("Average of marks = " + markSheet1.findAverage());
+        //Q.5
+        System.out.println("Pass ya Fail = " + markSheet1.passOrFail(35));
 
     }
 
