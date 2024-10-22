@@ -415,8 +415,8 @@ public class Driver {
 
 */
 
-        System.out.println("*************************Assignment - 09 - Wrapper Classes  *****************************");
-
+//        System.out.println("*************************Assignment - 09 - Wrapper Classes  *****************************");
+//
 /*  Q.1
 
         Assignment09.Circle circle1 = new Assignment09.Circle();
@@ -427,15 +427,15 @@ public class Driver {
 
 */
         //Q.2.
-        Assignment09.MarkSheet markSheet1 = new Assignment09.MarkSheet(); // instantiation
+       /* Assignment09.MarkSheet markSheet1 = new Assignment09.MarkSheet(); // instantiation
         markSheet1.setPhysicsMarks(34.01f); // setting Values in private area through setter methods
         markSheet1.setMathematicsMarks(90.02f);
         markSheet1.setChemistryMarks(72.05f);
         markSheet1.setEnglishMarks(95.01f);
         markSheet1.setHindiMarks(99.01f);
-        markSheet1.showAllSubjectMarks();
+        markSheet1.showAllSubjectMarks();*/
 
-        //Q.3.
+  /*      //Q.3.
         System.out.println("Max Marks = " + markSheet1.findMaxMark());
 
         //Q.4
@@ -443,6 +443,17 @@ public class Driver {
         //Q.5
         System.out.println("Pass ya Fail = " + markSheet1.passOrFail(35));
 
+
+   */
+
+
+        System.out.println("*************************Assignment - 10 - Command Line  Arguments  *****************************");
+
+
     }
+
+
+
+
 
 }
