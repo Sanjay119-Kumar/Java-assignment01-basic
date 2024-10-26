@@ -121,6 +121,9 @@ public class DriverCLI {
 
 
         */
+
+
+/*        //Q.8
         int num = Integer.parseInt(args[0]); // covert String to int
 
         Assignment10.SumOfDigitOfNumber obj = new Assignment10.SumOfDigitOfNumber(); // instantiation
@@ -132,5 +135,10 @@ public class DriverCLI {
       } catch (Exception e) {
           throw new RuntimeException(e); // handle exception............
       }
+
+
+      */
+
+
     }
 }
