@@ -63,7 +63,7 @@ public class Assignment01 {
                 else {
                     double realPart = (double) -b /(2*a);
                     double imaginaryPart = Math.sqrt(D)/2*a;
-                    System.out.println("Root are real or Imaginary / complex" + realPart + imaginaryPart);
+                    System.out.println("Root are real or Imaginary / complex" + realPart + imaginaryPart );
                 }
             }
 
