@@ -7,7 +7,7 @@ package assignment17;
                    and the third version takes both.
 */
 
-public class Person {
+public class PersonQ2 {
 
     // Instance variables for name and age
     private String name;
@@ -38,17 +38,17 @@ public class Person {
 class IdentifyPerson {
     public static void main(String[] args) {
         // Create the first Person object and set the name
-        Person p1 = new Person();
+        PersonQ2 p1 = new PersonQ2();
         p1.setPerson("Demo");
         System.out.println(p1);
 
         // Create the second Person object and set the age
-        Person p2 = new Person();
+        PersonQ2 p2 = new PersonQ2();
         p2.setPerson(22);
         System.out.println(p2);
 
         // Create the third Person object and set both name and age
-        Person p3 = new Person();
+        PersonQ2 p3 = new PersonQ2();
         p3.setPerson("Bhai", 20);
         System.out.println(p3);
     }
