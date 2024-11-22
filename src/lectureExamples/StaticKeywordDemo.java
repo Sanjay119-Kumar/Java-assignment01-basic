@@ -1,27 +1,26 @@
 package lectureExamples;
 
+// Demonstrates the use of final and static keywords for variables
 public class StaticKeywordDemo {
-   // static private int k; // by default value =0
 
-   // final static private int k; // compile time error
+    // A final static variable must be initialized only once and is shared across all instances
+    final static private int k; // Declare a final static variable
 
-   // final static private int k = 10; // 10 --> during Declaration+initialization final static variable
-
-    final static private int k;//100
-
-    // initialize final static variable using static block
-    static
-    {
-        k=100;
+    // Static block to initialize the final static variable
+    static {
+        k = 100; // Assign value to the final static variable during class loading
     }
 
-
-    public static void printK(){
-        System.out.println("K=" + k);
+    // Static method to print the value of the static variable
+    public static void printK() {
+        System.out.println("K = " + k); // Output the value of k
     }
 }
-class CheckStaticFinalK{
+
+// Class to test the StaticKeywordDemo class
+class CheckStaticFinalK {
     public static void main(String[] args) {
-        StaticKeywordDemo.printK();
+        // Call the static method directly using the class name
+        StaticKeywordDemo.printK(); // Output: K = 100
     }
 }
