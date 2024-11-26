@@ -1,22 +1,23 @@
 package lectureExamples;
 
-/* example - Define a class Person and Subclass Employee. Create constructors both the classes */
+/* Example: Define a class Person and Subclass Employee.
+   Create constructors in both the classes to demonstrate inheritance. */
 public class ConstructorInInheritance {
     private String name;
     private int age;
     private long phone;
 
-    // non-parameterized constructor
-    public ConstructorInInheritance(){
-        System.out.println("Constructor : Parent class ");
-    }
-    // parameterized constructor
-    public ConstructorInInheritance(int n){
-        System.out.println("Constructor : Parent class(int n) ");
+    // Default (no-argument) constructor
+    public ConstructorInInheritance() {
+        System.out.println("Constructor: Parent class (no-argument)");
     }
 
+    // Parameterized constructor
+    public ConstructorInInheritance(int n) {
+        System.out.println("Constructor: Parent class (int n)");
+    }
 
-    // getters and setters
+    // Getters and setters
     public String getName() {
         return name;
     }
@@ -42,30 +43,26 @@ public class ConstructorInInheritance {
     }
 }
 
-//SubClass
-class EmployeeAll extends ConstructorInInheritance{
+// Subclass
+class EmployeeAll extends ConstructorInInheritance {
     private double salary;
     private String role;
 
-    // provide default constructor jo call krta hai parent ke default or no argument wale constructor ko??
-
-    // create manually default constructor jo call krega parent class ke default constructor ko by super()
-    public EmployeeAll(){
-        super(); // always write in first line
-        System.out.println("Constructor : Child class");
-
-    }
-    // parameterized constructor jo call krega parent class ke parameterized or non parameterized base on super()
-    // if pass agr in super then parameterized constructor call of parent class if no pass any argument
-    // then simple call default constructor of parent class constructor ko by super()
-    public EmployeeAll(int k){
-        super(10); // always write in first line
-        System.out.println("Constructor : Child class(int k)");
-
+    // Default constructor
+    // Explicitly calls the parent class's default constructor using super()
+    public EmployeeAll() {
+        super(); // Call parent class default constructor
+        System.out.println("Constructor: Child class (no-argument)");
     }
 
+    // Parameterized constructor
+    // Explicitly calls the parent class's parameterized constructor using super()
+    public EmployeeAll(int k) {
+        super(10); // Call parent class parameterized constructor
+        System.out.println("Constructor: Child class (int k)");
+    }
 
-    // getters and setters
+    // Getters and setters
     public double getSalary() {
         return salary;
     }
@@ -83,10 +80,13 @@ class EmployeeAll extends ConstructorInInheritance{
     }
 }
 
-//main class
-class TestConstructors{
+// Main class to test constructors
+class TestConstructors {
     public static void main(String[] args) {
+        // Create an Employee object with the parameterized constructor
         EmployeeAll e1 = new EmployeeAll(5);
-
+        // Output:
+        // Constructor: Parent class (int n)
+        // Constructor: Child class (int k)
     }
 }

@@ -1,26 +1,28 @@
 package lectureExamples;
 
+/* Example: Demonstrating Constructor Chaining in Java */
 public class ConstructorChaining {
     private String name;
     private int age;
     private long phone;
 
-    // non-parameterized constructor
-    public ConstructorChaining(){
-        System.out.println("Constructor : Parent class ");
-    }
-    // parameterized constructor
-    public ConstructorChaining(int n){
-        System.out.println("Constructor : Parent class(int n) ");
-    }
-    // parameterized constructor
-    public ConstructorChaining(int x,int y){
-        this();
-        System.out.println("Constructor : Parent class(int x , int y) ");
+    // Default (no-argument) constructor
+    public ConstructorChaining() {
+        System.out.println("Constructor: Parent class (no-argument)");
     }
 
+    // Parameterized constructor with one argument
+    public ConstructorChaining(int n) {
+        System.out.println("Constructor: Parent class (int n)");
+    }
 
-    // getters and setters
+    // Parameterized constructor with two arguments
+    public ConstructorChaining(int x, int y) {
+        this(); // Calls the default constructor in the same class
+        System.out.println("Constructor: Parent class (int x, int y)");
+    }
+
+    // Getters and setters
     public String getName() {
         return name;
     }
@@ -46,35 +48,33 @@ public class ConstructorChaining {
     }
 }
 
-//SubClass
-class EmployeeChain extends ConstructorChaining{
+// Subclass
+class EmployeeChain extends ConstructorChaining {
     private double salary;
     private String role;
 
-    // provide default constructor jo call krta hai parent ke default or no argument wale constructor ko??
-
-    // create manually default constructor jo call krega parent class ke default constructor ko by super()
-    public EmployeeChain(){
-        this(10); // always write in first line
-        System.out.println("Constructor : Child class");
-
-    }
-    // parameterized constructor jo call krega parent class ke parameterized or non parameterized base on super()
-    // if pass agr in super then parameterized constructor call of parent class if no pass any argument
-    // then simple call default constructor of parent class constructor ko by super()
-    public EmployeeChain(int k){
-         super(20);// always write in first line
-        System.out.println("Constructor : Child class(int k)");
-
-    }
-    public EmployeeChain(int x,int y){
-        super(10,20); // always write in first line
-        System.out.println("Constructor : Child class(int x, int y)");
-
+    // Default constructor
+    // Calls the parameterized constructor of the same class using this()
+    public EmployeeChain() {
+        this(10); // Calls EmployeeChain(int k)
+        System.out.println("Constructor: Child class (no-argument)");
     }
 
+    // Parameterized constructor with one argument
+    // Calls the parent class parameterized constructor using super()
+    public EmployeeChain(int k) {
+        super(20); // Calls ConstructorChaining(int n)
+        System.out.println("Constructor: Child class (int k)");
+    }
 
-    // getters and setters
+    // Parameterized constructor with two arguments
+    // Calls the parent class parameterized constructor with two arguments
+    public EmployeeChain(int x, int y) {
+        super(10, 20); // Calls ConstructorChaining(int x, int y)
+        System.out.println("Constructor: Child class (int x, int y)");
+    }
+
+    // Getters and setters
     public double getSalary() {
         return salary;
     }
@@ -92,13 +92,17 @@ class EmployeeChain extends ConstructorChaining{
     }
 }
 
-//main class
-class TestConstructorsChaining{
+// Main class to test constructor chaining
+class TestConstructorsChaining {
     public static void main(String[] args) {
-        EmployeeChain e1 = new EmployeeChain();
-        EmployeeChain e3 = new EmployeeChain(100);
-        EmployeeChain e2 = new EmployeeChain(5,10);
+        System.out.println("Creating EmployeeChain with default constructor:");
+        EmployeeChain e1 = new EmployeeChain(); // Calls EmployeeChain()
 
+        System.out.println("\nCreating EmployeeChain with one argument:");
+        EmployeeChain e2 = new EmployeeChain(100); // Calls EmployeeChain(int k)
+
+        System.out.println("\nCreating EmployeeChain with two arguments:");
+        EmployeeChain e3 = new EmployeeChain(5, 10); // Calls EmployeeChain(int x, int y)
     }
 }
-
+//Subclass constructors always call the parent class constructor first.
